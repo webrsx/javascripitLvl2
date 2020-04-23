@@ -1,8 +1,8 @@
 import css from '@styles/styles.css'
 import Products from './products'
 import Render from './render'
-// когда делаю экспорт из RenderCart в index.js, то не прорисовываются товары в  корзине т.к не видно переменной userCart.
-// import RenderCart from './renderCart'
+// когда делаю экспорт из RenderCart в index.js, то не прорисовываются товары в  корзине т.к не видно переменной userCart
+// import RenderCart from './renderCart' .
 import less from './les'
 
 
