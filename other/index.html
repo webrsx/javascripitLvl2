@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p class="txt">"Lorem ipsum, dolor sit 'amet' consectetur adipisicing elit.
+         Beatae distinctio officiis tempore dolores autem omnis a placeat nesciunt aren't accusamus velit.
+          Voluptatum repudiandae in nostrum 'veniam' repellendus dolores ducimus. Facilis tempora facere 
+          deleniti ipsam beatae, quae excepturi ipsa tenetur 'laboriosam quo' est it's, mollitia expedita quidem
+           iusto ab quos incidunt adipisci quas.'</p>
+    <script>
+        'use strict'
+        //Код, что находится ниже, берет текст из тэга p с классом txt. заменяет все одинарные кавычки на двойные, кроме тех, что внутри слова
+        let string = document.querySelector(".txt").textContent
+        let regexp = /^'|'\s|\s'|'$/g
+        let result = string.replace(regexp, '"')
+        document.querySelector(".txt").textContent = result
+    </script>
+</body>
+</html>
